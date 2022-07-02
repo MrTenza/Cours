@@ -1,0 +1,38 @@
+/* Class */
+.h1-red {
+  color: red;
+}
+
+.big-font {
+  font-size: 30px;
+}
+
+/* ID */
+#main-title {
+  background: green;
+}
+
+#main-title p {
+  color: red;
+}
+
+/* Universel */
+* {
+  color: darkcyan;
+}
+
+/* Selectionner les attribut en selectionnant les a avec l'attribut title */
+a[title] {
+  color: red;
+}
+
+/* Groupement de plusieurs selecteurs */
+div,
+span {
+  color: red;
+}
+
+/* Selectionner les éléments imbriquer dans l'éléments selectionner , selectionne la sapan qui est dans la div */
+div span {
+  color: red;
+}

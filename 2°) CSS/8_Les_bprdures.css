@@ -1,0 +1,13 @@
+.mydiv {
+  width: 200px;
+  height: 200px;
+  /* background-color: aliceblue;
+  border-width: 1px;
+  border-style: solid;
+  border-color: brown;*/
+  /* Raccourcis */
+  border: 1px solid brown;
+  border-radius: 5px;
+  border-top: 5px dashed red;
+  border-bottom: 0;
+}

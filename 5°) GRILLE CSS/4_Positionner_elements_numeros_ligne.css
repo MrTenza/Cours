@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  /* grille de 3X3 */
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-auto-flow: column;
+  /* En cas de création de nouvelle colonne */
+  grid-auto-columns: 500px;
+  background: green;
+}
+
+.item {
+  background: blue;
+  color: white;
+  font-weight: 700;
+  border: 1px solid red;
+  padding: 1rem;
+}
+
+.item:nth-child(1) {
+  /* définis le positionnement de l'item 1 en column => début à la deuxieme ligne*/
+  /*grid-column-start: 2;*/
+
+  /* Définis la ligne de fin en column => fin à la 4ieme ligne*/
+  /* grid-column-end: 4;*/
+
+  /* Pour étendre en column à par exemple 2 cellule => span 2 */
+  /*grid-column-end: span 2;*/
+
+  /* Raccourcis */
+  /*grid-column: 2 / 3;*/
+
+  /* Ajout d'une nouvelle colonne qui va etre a 500 px */
+  grid-column: 4/5;
+
+  /* définis le positionnement de l'item 1 en row => début à la deuxieme ligne*/
+  /*grid-row-start: 2;*/
+
+  /* Définis la ligne de fin en row => fin à la 4ieme ligne*/
+  /* grid-row-end: 4;*/
+
+  /* Raccourcis */
+  grid-row: 2 / 3;
+}

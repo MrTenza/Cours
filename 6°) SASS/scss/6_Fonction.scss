@@ -1,0 +1,48 @@
+@import "./fichiers_annexes/3_imbrication";
+@import "./fichiers_annexes/4_heritage_buttons";
+@import "./fichiers_annexes/5_mixins";
+@import "./fichiers_annexes/5_Mixins_media";
+@import "./fichiers_annexes/6_Fonction";
+
+body {
+  margin: 0;
+  font-family: $font-family;
+  background-color: $gray;
+  height: 100vh;
+  position: relative;
+}
+
+.card {
+  box-sizing: border-box;
+  @include responsive(xs) {
+    background: red;
+  }
+  @include responsive(xl) {
+    background: orange;
+  }
+  width: 500px;
+  height: 300px;
+  border: 1px solid #ccc;
+  background: white;
+  border-radius: 30px;
+  padding: 2rem;
+  h1 {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid $gray;
+
+    span {
+      color: $primary;
+    }
+  }
+  .text {
+    color: #333;
+  }
+  ul {
+    @include inline-list;
+  }
+  position: absolute;
+  /* On remplace $size par 500px */
+  left: centerAbsolute(500px);
+  top: centerAbsolute(300px);
+}

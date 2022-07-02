@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background: orange;
+  /* Delais avant la transition */
+  /*transition-delay: 1s;*/
+  /* Durée de la transition */
+  /*transition-duration: 2s;*/
+  /* Sur qu'elle propriété on va l'appliquer*/
+  /*transition-property: background, height;*/
+  /* Vitesse de la transition */
+  /*transition-timing-function: ease-out;*/
+
+  /* Commande express */
+  transition: background 2s ease-in-out 1s, width ease-in-out 5s, border 2s,
+    border-radius 2s;
+
+  /* Pour appliquer a tute les propriete du hover : */
+  /*transition: all;*/
+}
+
+.box:hover {
+  background: teal;
+  width: 800px;
+  border: 3px solid red;
+  border-radius: 30px;
+}

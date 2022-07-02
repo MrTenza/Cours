@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  /*grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;*/
+  background: green;
+
+  /* Place les noms des zones , Si on met un point à la place d'un élément on le déclare vide */
+  /*grid-template-areas:
+    "header header header header"
+    "main main main aside"
+    "main main main aside "
+    "footer footer footer footer";*/
+
+  /* Méga raccourcis . A gauche => Nom des zones + rows / Nom des zones + columns*/
+  grid:
+    "header header header header" 1fr
+    "main main main aside " 1fr
+    "main main main aside" 1fr
+    "footer footer footer footer" 1fr
+    / 1fr 1fr 1fr 1fr;
+}
+
+header {
+  /* Raccourcis grid-column et grid-row
+  1 => row start / 2 => column start / 3 => row-end / 4 => column-end */
+  /* grid-area: 2 / 2 / 3 / 4;*/
+
+  /* Donne un nom aux zones */
+  grid-area: header;
+  background: red;
+}
+
+main {
+  background: purple;
+  grid-area: main;
+}
+
+aside {
+  grid-area: aside;
+  background: orange;
+}
+footer {
+  background: #333;
+  grid-area: footer;
+}

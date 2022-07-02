@@ -1,0 +1,22 @@
+.header {
+  height: 50px;
+  background: red;
+}
+
+.main {
+  background: green;
+}
+
+.article {
+  display: inline-block;
+  height: 500px;
+  background: purple;
+  width: 69%;
+}
+
+.aside {
+  display: inline-block;
+  height: 500px;
+  background: orange;
+  width: 30%;
+}

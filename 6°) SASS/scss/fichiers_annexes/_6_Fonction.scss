@@ -1,0 +1,4 @@
+@function centerAbsolute($size) {
+  /* Les accolade servent a remplacer size quand elle va etre extrapoler */
+  @return calc(50% - #{$size / 2});
+}

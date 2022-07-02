@@ -1,0 +1,14 @@
+.mydiv {
+  width: 500px;
+  height: 900px;
+  /*background-color: green;*/
+  /*background-image: url(pictures/image.jpg);
+  background-repeat: no-repeat;
+  background-position: 10% 10%;
+*/
+  background: green url(pictures/image.jpg) no-repeat top left;
+  /* Raccourcis */
+  background-size: cover;
+  /* Scrool en meme temps l'image */
+  background-attachment: scroll;
+}

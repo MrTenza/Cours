@@ -1,0 +1,43 @@
+@import "./fichiers_annexes/3_imbrication";
+@import "./fichiers_annexes/4_heritage_buttons";
+@import "./fichiers_annexes/5_mixins";
+@import "./fichiers_annexes/5_Mixins_media";
+
+body {
+  font-family: $font-family;
+  background-color: $gray;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  @include responsive(xs) {
+    background: red;
+  }
+  @include responsive(xl) {
+    background: orange;
+  }
+  width: 500px;
+  height: 300px;
+  border: 1px solid #ccc;
+  background: white;
+  border-radius: 30px;
+  padding: 2rem;
+  h1 {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid $gray;
+
+    span {
+      color: $primary;
+    }
+  }
+  .text {
+    color: #333;
+  }
+  ul {
+    @include inline-list;
+  }
+}

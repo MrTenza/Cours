@@ -1,0 +1,13 @@
+.first {
+  color: red !important; /* rend la couleur prioritaire */
+}
+
+.second {
+  color: aqua;
+}
+
+/* Plus il est générale moins il sera selectionner */
+p {
+  color: green;
+  font-size: 25px;
+}

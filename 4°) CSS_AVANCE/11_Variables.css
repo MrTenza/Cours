@@ -1,0 +1,14 @@
+:root {
+  /* Déclarer une variable */
+  --red: #e74c3c;
+  --box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
+}
+
+.gray-block {
+  /* Utiliser la variable */
+  box-shadow: var(--box-shadow);
+  --red: blue;
+}
+.gray-block-text {
+  color: var(--red, purple);
+}

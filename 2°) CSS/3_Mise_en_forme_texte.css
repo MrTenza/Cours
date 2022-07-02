@@ -1,0 +1,16 @@
+body {
+  font-family: "Macondo", cursive;
+  font-size: 16px;
+  font-weight: 900;
+  font-style: italic;
+  text-decoration: underline;
+  line-height: 40px;
+  letter-spacing: 5px;
+}
+
+a {
+  text-decoration-line: underline;
+  text-decoration-style: double;
+  text-decoration-color: crimson;
+  text-transform: uppercase;
+}

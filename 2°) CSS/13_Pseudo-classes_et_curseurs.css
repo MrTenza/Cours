@@ -1,0 +1,20 @@
+a:visited {
+  color: green;
+}
+
+a:active {
+  color: yellow;
+}
+
+a:hover {
+  background: red;
+  cursor: pointer;
+}
+
+input:focus {
+  background: blueviolet;
+}
+
+input:hover {
+  cursor: col-resize;
+}

@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background: orange;
+  /* Nom de l'animation */
+  animation-name: fadeIn;
+
+  /* Durée de l'animation */
+  /*animation-duration: 3s;*/
+
+  /* Si on précise la propriété directement dans la classe , on fait fill mode et la valeurs qui sera garder c'est celle dans le to : */
+  animation-fill-mode: forwards;
+
+  /* Nombre d'itération */
+  /*animation-iteration-count: infinite;*/
+
+  /* Attente avant que l'animation se lance */
+  /*animation-delay: 1s;*/
+
+  /* Inverser l'animation , commencer par le to */
+  /*animation-direction: alternate;*/
+
+  /* Vitesse de l'animation */
+  /* animation-timing-function: ease-in-out;*/
+
+  opacity: 0;
+  /* Super propriété (nom , durée , delay , les autre propriétés: */
+  animation: fadeIn 1s 2s infinite alternate ease-in-out;
+}
+
+/* Définir l'animation fadeIn */
+@keyframes fadeIn {
+  /* Début : from */
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  50% {
+    background: blue;
+  }
+
+  75% {
+    border-radius: 50px;
+  }
+  /* Arrivée : to */
+  100% {
+    opacity: 1;
+    width: 500px;
+  }
+}

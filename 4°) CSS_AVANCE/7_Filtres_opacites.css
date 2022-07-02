@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+body img {
+  width: 700px;
+  /* On apliqe un filtre sur l'image */
+  /*filter: blur(2px);*/
+  /*filter: contrast(50%);*/
+  /*filter: brightness(30%);*/
+  /*filter: drop-shadow(5px 5px 2px black);*/
+  /*filter: grayscale(100%);*/
+  /*filter: sepia(100%);*/
+  opacity: 0.5;
+}
+
+body img:hover {
+  /*filter: grayscale(0%);*/
+  filter: opacity(0.3);
+}

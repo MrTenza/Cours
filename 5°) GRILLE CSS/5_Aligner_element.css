@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  /* grille de 3X3 */
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  background: green;
+}
+
+.item {
+  background: blue;
+  color: white;
+  font-weight: 700;
+  border: 1px solid red;
+  padding: 1rem;
+}
+
+.item:nth-child(1) {
+  width: 100px;
+  height: 100px;
+  grid-row: 2 / span 2;
+  /* Aligner l'élements horizontale dans sa cellule */
+  justify-self: center;
+  /* Aligner l'élements verticale dans sa cellule */
+  align-self: center;
+  /* raccourcis */
+  place-self: center;
+}

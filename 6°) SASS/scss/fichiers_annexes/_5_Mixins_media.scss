@@ -1,0 +1,26 @@
+@mixin xs {
+  @media only screen and (max-width: 500px) {
+    /* Sert a incorporer des propriéter en remplacant de @content */
+    @content;
+  }
+}
+
+@mixin xl {
+  @media only screen and (min-width: 1000px) {
+    @content;
+  }
+}
+
+/* Utilisation de parametres */
+@mixin responsive($device) {
+  @if $device == xs {
+    @include xs {
+      @content;
+    }
+  }
+  @if $device == xl {
+    @include xl {
+      @content;
+    }
+  }
+}

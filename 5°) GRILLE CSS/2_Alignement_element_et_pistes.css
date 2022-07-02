@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 300px 300px;
+  gap: 5px 25px;
+  /* Aligner horizontalement le container des items */
+  justify-content: center;
+
+  /* Aligner verticalement le container des items */
+  align-content: space-between;
+
+  /* Aligner horizontalement les items à l'intérieur de leur container */
+  justify-items: center;
+
+  /* Aligner verticalement les items à l'intérieur de leur container */
+  align-items: center;
+
+  /* Commande raccourcis pour grouper align et justify content pour le container des items*/
+  place-content: center;
+
+  /* Commande raccourcis pour grouper align et justify content pour les items à l'intérieur de leur container*/
+  place-items: center;
+}
+
+.item {
+  background: blue;
+  color: white;
+  height: 100px;
+  width: 100px;
+  font-weight: 700;
+  border: 1px solid red;
+  padding: 1rem;
+}

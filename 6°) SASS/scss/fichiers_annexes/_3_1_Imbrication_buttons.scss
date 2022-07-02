@@ -1,0 +1,30 @@
+.btn {
+  &:hover {
+    opacity: 0.8;
+  }
+  border: 0;
+  border-radius: 5px;
+  padding: 1re 2rem;
+  min-width: 100px;
+  background: #333;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+
+  /* Parent selector pour selectionner les differents boutons */
+  &-warning {
+    background: orange;
+  }
+
+  &-primary {
+    background: blue;
+  }
+
+  &-danger {
+    background: red;
+  }
+
+  &-default {
+    background: green;
+  }
+}

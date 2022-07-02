@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Formulaire tye text , action c'est ou envoyer le formulaire -->
+    <form action="#" method="post">
+      <label for="name">Nom</label>
+      <input name="name" placeholder="Nom" type="text" id="name" />
+      <br />
+      <br />
+      <!-- Formulaire email-->
+      <label for="email">Email</label>
+      <input name="email" placeholder="Nom" type="email" id="email" />
+      <br />
+      <br />
+      <!-- Formulaire de type date-->
+      <label for="date">Date</label>
+      <input name="date" placeholder="date" type="date" id="date" />
+      <br />
+      <br />
+      <!-- Formulaire de type password-->
+      <label for="password">Mot de passe</label>
+      <input
+        name="password"
+        placeholder="password"
+        type="password"
+        id="password"
+      />
+      <br />
+      <br />
+      <!-- Texte area-->
+      <label for="description">Description</label>
+      <textarea name="description" id="description"></textarea>
+      <br />
+      <br />
+      <!-- Select list -->
+      <label for="gender">gender</label>
+      <select name="gender" id="gender">
+        <option value="man">Homme</option>
+        <option value="women">Femme</option>
+        <option value="child" selected>Enfant</option>
+      </select>
+      <br />
+      <br />
+      <!-- Checkbox-->
+      <label for="fruit">Fruit</label><br />
+      <input name="fruit" type="checkbox" id="fruit" value="apple" />
+      Pomme
+      <br />
+      <input name="fruit" type="checkbox" id="fruit" value="peach" />
+      Peche
+      <br />
+      <br />
+      <!-- Type radio-->
+      <label for="sport"></label><br />
+      <input name="sport" type="radio" id="sport" value="foot" /> Foot <br />
+      <input name="sport" type="radio" id="sport" value="rubgy" /> rubgy <br />
+      <!-- Soumettre le formulaire -->
+      <input type="submit" value="sauvegarder" /> <br />
+      <button type="submit">Sauvegarder bouton</button>
+    </form>
+    <!-- Autofocus => selectionne automatiquement 
+          disabled => desactive 
+    -->
+
+    <!-- Pour les sais de text 
+      readonly => utilisateur peux pa modifier la valeur du champ
+      required => champ obligatoire 
+    -->
+
+    <!--Listes sélectionnable avec select  
+
+        L'élément optgroup permet de défi ir un label qui est affiché pour un groupe d'option
+
+        L'attribut multiple sur select permet de rendre selectionnable plusieurs options en utilisant ctrl ou maj  
+      
+        L'élément fieldset permet de regrouper plusieurs chanps en les encadrant , il permet de définir une <legend> décrivant le groupe 
+        
+        
+        L'élément progress
+        Une barre de progression, défini avec <progress> représente une valeur qui évolue dans le temps jusqu'à une valeur maximale définie par l'attribut max.
+        Cela permet par exemple d'afficher l'avancement d'un téléchargement.
+        Le contenu entre les deux balises est un affichage alternatif pour les vieux navigateurs (comme pour alt pour une image qui ne se charge pas). 
+
+        L'élément meter
+        Un étalon, défini avec <meter>, est une valeur fixe dans une plage délimitée par une valeur minimale min et une valeur maximale max.
+        L'étalonnage est divisé en trois partie : entre min et
+        low, entre low et high et entre high et max.
+        optimum permet de définir la valeur optimale pour l'étalonnage et défini ainsi la partie préférée, moyenne et moins bonne. 
+        La partie optimum peut être basse, par exemple 10, et dans ce cas cela inversera les parties préférées. L'interval la plus basse sera le préféré etc.
+        La partie préférée s'affiche en vert, la partie moyenne en jaune et la partie moins bonne en rouge.
+        Le contenu entre les deux balises est un affichage alternatif pour les vieux navigateurs. 
+      -->
+  </body>
+</html>

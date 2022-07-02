@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+}
+
+.container {
+  height: 100vh;
+  /*Définir le nombre de colone  fr => fraction*/
+  display: grid;
+  grid-template-columns: 200px auto 100px;
+  /* Définir le nombres de lignes */
+  grid-template-rows: 1fr 1fr;
+  /* Définir espace entre les éléments de la grille  row et columns */
+  /*row-gap: 10px;
+  column-gap: 15px;*/
+
+  /* Définir les 2 espace d'un coup */
+  gap: 5px 15px;
+}
+
+.item {
+  background: blue;
+  color: white;
+  font-weight: 700;
+  border: 1px solid red;
+  padding: 1rem;
+}

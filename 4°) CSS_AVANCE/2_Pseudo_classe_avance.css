@@ -1,0 +1,29 @@
+/* Selectionner le premier*/
+li:first-child {
+  background: red;
+}
+
+/* Selectionner le dernier*/
+li:last-child {
+  background: blue;
+}
+
+/* Selectionner le deuxieme élément*/
+li:nth-child(2) {
+  background: orange;
+}
+
+/* Selection tout les 3 éléments et le +0 sert à partir de 0 */
+li:nth-child(3n + 0) {
+  background: teal;
+}
+
+/* Selection tout les éléments impair */
+li:nth-child(odd) {
+  background: gray;
+}
+
+/* Selection tout les éléments pair */
+li:nth-child(even) {
+  background: #ddd;
+}

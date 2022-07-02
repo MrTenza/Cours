@@ -1,0 +1,5 @@
+body {
+  color: rgb(255, 255, 0);
+  color: rgba(255, 255, 0, 0.5); /* a = transparence */
+  color: #ffffff; /* ff = base 16 et définis une base sur 255 */
+}

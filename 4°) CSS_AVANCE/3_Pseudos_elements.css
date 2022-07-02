@@ -1,0 +1,26 @@
+/* Sert à ajouter du contenu à un élément après , sert par exemple à indiquer un élément a remplir obligatoirement */
+.required::after {
+  content: "*";
+  color: teal;
+  font-size: 2rem;
+}
+
+/* Sert à ajouter du contenu à un élément avant , sert par exemple à indiquer un élément a remplir obligatoirement */
+.required::before {
+  content: "- ";
+  color: red;
+  font-size: 2rem;
+}
+
+.quote {
+  font-style: italic;
+  color: #333;
+}
+
+.quote::before {
+  content: "\201C";
+}
+
+.quote::after {
+  content: "\201D";
+}

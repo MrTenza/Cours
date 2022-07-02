@@ -1,0 +1,35 @@
+.container {
+  background: rgb(139, 108, 108);
+  height: 500px;
+  width: 500px;
+  position: relative;
+  /* Cacher un élément mais la place est réservé  
+  visibility: hidden;*/
+  /* Cache un élément et la place est libre 
+  display: none;*/
+
+  /* Cache la partie qui dépasse du container (elem-1) ou on peux mettre auto */
+  overflow: hidden;
+}
+
+.elem {
+  width: 200px;
+  height: 200px;
+}
+
+.elem-1 {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  background: teal;
+  height: 900px;
+  /* Affiche cette élément au dessus des autres */
+  z-index: 1;
+}
+
+.elem-2 {
+  position: absolute;
+  bottom: 100px;
+  right: 100px;
+  background: green;
+}

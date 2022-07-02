@@ -1,0 +1,83 @@
+@charset "UTF-8";
+/* Etendre la classe btn pour l'utliser ailleurs */
+.btn-default, .btn-danger, .btn-primary, .btn-warning {
+  border: 0;
+  border-radius: 5px;
+  padding: 1re 2rem;
+  min-width: 80px;
+  background: #333;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+.btn-default:hover, .btn-danger:hover, .btn-primary:hover, .btn-warning:hover {
+  opacity: 0.8;
+}
+
+.btn-warning {
+  /* Applique tout le css de btn dans les different boutons */
+  background: orange;
+}
+
+.btn-primary {
+  background: blue;
+}
+
+.btn-danger {
+  background: red;
+}
+
+.btn-default {
+  background: green;
+}
+
+/* Utilisation de parametres */
+body {
+  font-family: "Courier New", Courier, monospace;
+  background-color: #eee;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 500px;
+  height: 300px;
+  border: 1px solid #ccc;
+  background: white;
+  border-radius: 30px;
+  padding: 2rem;
+}
+@media only screen and (max-width: 500px) {
+  .card {
+    /* Sert a incorporer des propriéter en remplacant de @content */
+    background: red;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .card {
+    background: orange;
+  }
+}
+.card h1 {
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+}
+.card h1 span {
+  color: green;
+}
+.card .text {
+  color: #333;
+}
+.card ul {
+  padding-left: 0;
+  list-style: none;
+}
+.card ul li {
+  display: inline-block;
+  padding: 1rem 2rem;
+}
+
+/*# sourceMappingURL=5_Mixins.css.map */

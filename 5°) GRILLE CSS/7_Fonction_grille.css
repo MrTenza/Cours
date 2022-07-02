@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+}
+
+.container {
+  min-height: 100vh;
+  display: grid;
+
+  /* Pour éviter de répéter 1fr */
+  /*grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);*/
+
+  grid-template-columns: 1fr;
+
+  /* Donner une valeur minimal a une row , a gauche => valeur minimal / a droite => valeur maximal */
+  grid-template-rows: 100px minmax(500px, 1fr) 100px;
+  grid-auto-flow: row;
+}
+
+.item {
+  background: blue;
+  color: white;
+  font-weight: 700;
+  border: 1px solid red;
+  padding: 1rem;
+}

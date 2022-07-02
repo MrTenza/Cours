@@ -1,0 +1,18 @@
+/* Taille du width bien a 300px qui inclue le padding et le border */
+* {
+  box-sizing: border-box;
+}
+
+.mydiv {
+  border: 1px solid red;
+  /* padding: 20px;*/
+  /* padding-top: 20px;
+  padding-right: 15px;
+  padding-bottom: 20px;
+  padding-left: 20px;*/
+  /* Raccourcis */
+  /* padding: 20px 15px 20px 20px;
+  margin: 20px;*/
+  padding: 20px;
+  width: 300px;
+}

@@ -1,0 +1,45 @@
+/* Position relative => decale avec les valeur top , right etc par rapport a son emplacement originale 
+
+Position absolute => Decale avec les valeurs top, right etc par rapport au début de la page et va rechercher le premier element en relative et va se positionner par rapport a lui 
+
+Position fixed => Reste dans la meme position meme si le container change de hauteur 
+
+Position sticky => Se comporte comme fixed mais se bloque jusqu'a atteindre par exemple top:0 ; une fois atteinte il passe en position fixe*/
+body {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  margin-top: 100px;
+  background: rgb(139, 106, 106);
+  position: relative;
+  height: 3000px;
+  width: 5000px;
+}
+
+.elem {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+}
+
+.elem-1 {
+  background: red;
+}
+
+.elem-2 {
+  background: yellow;
+}
+
+.elem-3 {
+  background: green;
+  position: sticky;
+  left: 20px;
+  top: 0px;
+}
+
+.elem-4 {
+  background: blue;
+  position: relative;
+  left: 20px;
+}

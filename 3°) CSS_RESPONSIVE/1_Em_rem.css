@@ -1,0 +1,17 @@
+/* Privilégier le rem */
+html {
+  /*font-size: 10px;*/
+  font-size: 62.5%;
+  /* Ce qui permet à l'utilisateur de modifier dans les parametre de son navigateur la taille du texte et à ce que ce soit pris en compte sur la page que l'on a créer */
+
+  /* Par défaut c'est 16px pour la taille des éléments */
+}
+
+p {
+  font-size: 2rem; /* 2*10 px du font-size html */
+  line-height: 2.5rem;
+}
+
+ul {
+  font-size: 2rem;
+}

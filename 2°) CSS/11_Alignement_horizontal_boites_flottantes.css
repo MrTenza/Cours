@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+.elem {
+  background: rgb(58, 58, 58);
+  border: 1px solid #555;
+  padding: 20px;
+  text-align: left;
+}
+
+.elem-1 {
+  float: left;
+  width: 70%;
+}
+
+.elem-2 {
+  float: right;
+  width: 30%;
+}
+
+.elem-3 {
+  clear: both;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+}

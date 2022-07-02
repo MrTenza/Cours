@@ -1,0 +1,7 @@
+body {
+  margin: 0;
+  height: 100vh;
+  /* Direction du gradient , couleur de bébut et couleurs de fin */
+  /* background: linear-gradient(to bottom right, red 50%, blue 50%); */
+  background: linear-gradient(to bottom right, blue, white, red);
+}
