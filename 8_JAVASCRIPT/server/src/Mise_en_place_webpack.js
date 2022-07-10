@@ -1,8 +1,28 @@
-const path = require("path");
+/* METTRE EN PLACE BABEL + WEBPACK */
+
+/*
+
+npm init -y
+
+npm  i @babel/cli  @babel/core  @babel/preset-env babel-loader html-webpack-plugin webpack webpack-cli webpack-dev-server
+
+Dossier src => index.js et index.html
+
+Fichier babel.config.js
+ => module.exports = {
+  presets: [["@babel/preset-env"]],
+};
+
+Dand le package.json => Ajouter 2 script =>
+    "webpack": "webpack",
+    "start": "webpack serve"
+
+  Créer un fichier webpack.config.js =>
+  const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  entry: path.resolve(__dirname, "src/Mise_en_place_webpack.js"),
+  entry: path.resolve(__dirname, "src/index.js"),
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "[name].bundle.js",
@@ -31,3 +51,7 @@ module.exports = {
     port: 4000,
   },
 };
+
+lancer webpack => npm start webpack 
+lancer le server => npm start
+*/
