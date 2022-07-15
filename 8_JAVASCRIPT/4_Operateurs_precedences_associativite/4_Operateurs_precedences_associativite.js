@@ -17,9 +17,14 @@ let e = 10 % 5;
 // Parenthèse //
 let f = ((2 + 2) * 6) / 2;
 
-// Ajoute 2 à "g"
+// Ajoute 2 à "g" //
 let g = 1;
 g += 2;
+
+// Opérateurs logique: &&, ||, !//
+true && true; // true
+false && true; // false
+false && false; // false
 
 console.log(a);
 console.log(b);
