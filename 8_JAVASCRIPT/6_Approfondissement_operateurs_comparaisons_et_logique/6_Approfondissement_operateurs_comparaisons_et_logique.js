@@ -11,9 +11,9 @@ console.log(!true);
 // Réinverse 2 fois //
 console.log(!!true);
 
-// Vérifie les deux condition et renvois true et si une condition est pas bonne il renvois false  //
+// Vérifie les deux condition et renvois true et si une condition est pas bonne il renvois false (et et ) //
 console.log(true && true); //true//
 console.log(true && false); //false//
 
-// Vérifie si un des deux opérand est true //
+// Vérifie si un des deux opérand est true => renvois true  (ou ou ) //
 console.log(false || true);
